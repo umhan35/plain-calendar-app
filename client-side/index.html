@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>calenders</title>
+    <!--<link rel="stylesheet" href="static/css.css">-->
+  </head>
+  <body>
+    <form id="main">
+
+      <fieldset>
+        <legend>Choose a User</legend>
+        <select name="users" onchange="userSelected()">
+          <option></option>
+        </select>
+      </fieldset>
+
+      <fieldset id="calender">
+        <legend>Calender for <span id="user"></span></legend>
+        <select name="events" size="8"> </select>
+        <br />
+        <a href="#" onclick="newEventClicked()">create a new event</a>
+      </fieldset>
+    </form>
+
+    <form id="newEvent" method="POST" action="http://www3.cs.umanitoba.ca/~umhan35/cgi-bin/calenderApp/scripts/calender.cgi">
+      <fieldset>
+        <legend>Create a New Event</legend>
+        uid:<br /><input type="text" name="user" disabled="disabled" /><br />
+        name:<br /><input type="text" name="name" /><br />
+        description:<br /><input type="text" name="desc" /><br />
+        date:<br /><input type="text" name="date" /> (year-month-day)<br />
+        <input type="submit" value="Go" />
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+<script type="text/javascript" src="static/lib.js"></script>
+<script type="text/javascript" src="static/json.js"></script>
+<script type="text/javascript" src="static/page.js"></script>
+<!--<script type="text/javascript" src="calenders.js"></script>-->
