@@ -22,5 +22,5 @@ Plain is good sometimes. There are more good things:
 
 
 ## Other
-
-It works on `Chrome/Safari/Firefox` but probably not on old `IE`
+ - It's still alive here: http://www3.cs.umanitoba.ca/~umhan35/cgi-bin/calenderApp/
+ - It works on `Chrome/Safari/Firefox` but probably not on old `IE`
